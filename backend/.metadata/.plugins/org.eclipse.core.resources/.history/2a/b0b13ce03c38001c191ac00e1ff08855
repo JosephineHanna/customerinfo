@@ -1,0 +1,11 @@
+package com.jumia.daos;
+
+import java.util.List;
+
+import com.jumia.entities.Customer;
+
+public class CustomerDao {
+
+  List<Customer> findAll();
+
+}

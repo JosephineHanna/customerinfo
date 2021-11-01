@@ -1,0 +1,6 @@
+package com.jumia.config;
+
+@SpringBootTest
+public class ApplicationTest {
+
+}

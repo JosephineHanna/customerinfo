@@ -1,0 +1,23 @@
+package com.jumia.services.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jumia.daos.CustomerDao;
+import com.jumia.entities.Customer;
+import com.jumia.services.CustomerService;
+
+@Service
+public class CustomerServiceImpl extends JpaRepository<Customer,> implements CustomerService {
+
+  @Autowired
+  private CustomerDao customerDao;
+
+  @Override
+  public List<Customer> findAll() {
+    return customerDao.findAll();
+  }
+
+}

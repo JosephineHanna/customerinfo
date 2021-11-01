@@ -1,0 +1,31 @@
+package com.jumia.services.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.yaml.snakeyaml.util.EnumUtils;
+
+import com.jumia.daos.CustomerDao;
+import com.jumia.entities.Customer;
+import com.jumia.enums.CountryCode;
+import com.jumia.services.CustomerService;
+
+@Service
+public class CustomerServiceImpl implements CustomerService {
+
+  @Autowired
+  private CustomerDao customerDao;
+
+  @Override
+  public List<Customer> findAll() {
+    List<Customer> customerList = customerDao.findAll();
+    for (Customer customer : customerList) {
+      String phone = customer.getPhone();
+      String code = phone.substring(phone.indexOf("(") + 1, phone.indexOf(")"));
+      CountryCode countryCode = CountryCode.getEnumByValue(code);
+    }
+    return customerDao.findAll();
+  }
+
+}

@@ -1,0 +1,30 @@
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+:root {
+  --main-text-color: #191919;
+  --secondary-dark-filling-color: #c9dfe8;
+  --borders-color: #0000001a;
+}
+
+html,
+body {
+  height: 100%;
+  color: var(--main-text-color);
+  font-size: 16px;
+}
+table {
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.main-padding {
+  padding-left: var(--left-right-padding);
+  padding-right: var(--left-right-padding);
+}

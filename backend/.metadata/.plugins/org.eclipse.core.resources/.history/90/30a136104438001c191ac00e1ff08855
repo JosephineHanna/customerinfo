@@ -1,0 +1,21 @@
+package com.jumia.controllers;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.jumia.services.CustomerService;
+
+@RestController
+public class PhoneNumberController {
+
+  @Autowired
+  private CustomerService customerService;
+
+  @RequestMapping("/")
+  public String hello() {
+    List<Customer>
+    return "Hello World!";
+  }
+
+}

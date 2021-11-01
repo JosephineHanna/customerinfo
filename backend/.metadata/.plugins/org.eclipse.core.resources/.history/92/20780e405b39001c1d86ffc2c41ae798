@@ -1,0 +1,11 @@
+package com.jumia.enums;
+
+public enum CountryCodeRegex {
+  CAMEROON("237"), ETHIOPIA("251"), MOROCCO("212"), MOZAMBIQUE("258"), UGANDA("256");
+  
+  private String regex;
+
+  CountryCodeRegex(String regex) {
+    this.regex = regex;
+  }
+}

@@ -1,0 +1,14 @@
+1635458054113	Rename package 'com.jumia.datasource'
+1635458338740	Delete element
+1635461748632	Delete element
+1635461868299	Extract constant 'DRIVER_CLASS_NAME'
+1635461878031	Extract constant 'URL'
+1635461884989	Extract constant 'USER'
+1635461891864	Extract constant 'PASSWORD'
+1635463011571	Rename type 'PhoneNumberController'
+1635581204103	Extract local variable 'phone'
+1635582141527	Extract method 'setCountry'
+1635595110353	Rename type 'customerControllerTest'
+1635596459700	Extract local variable 'returnedCustomer1'
+1635599023266	Rename type 'APPLICATIONtEST'
+1635626127140	Move compilation unit

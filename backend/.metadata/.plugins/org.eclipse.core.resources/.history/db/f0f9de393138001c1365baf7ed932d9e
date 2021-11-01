@@ -1,0 +1,6 @@
+package com.jumia.controllers;
+
+@RestController
+public class PhoneNumberController {
+
+}

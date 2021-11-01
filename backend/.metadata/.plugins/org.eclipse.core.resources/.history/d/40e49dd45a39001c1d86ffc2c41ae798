@@ -1,0 +1,7 @@
+package com.jumia.enums;
+
+public enum CountryCodeRegex {
+  237("237"), 251("251"), 212("212"), 258("258"), 256("256");
+  
+  private String regex;
+}

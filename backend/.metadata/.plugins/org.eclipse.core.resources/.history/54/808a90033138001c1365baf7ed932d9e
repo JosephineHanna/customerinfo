@@ -1,0 +1,6 @@
+package com.jumia.controllers;
+
+@SpringBootApplication
+public class MainApplication {
+
+}

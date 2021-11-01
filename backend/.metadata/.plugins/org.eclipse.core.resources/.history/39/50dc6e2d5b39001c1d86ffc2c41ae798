@@ -1,0 +1,11 @@
+package com.jumia.enums;
+
+public enum CountryCodeRegex {
+  237("\(237\)\ ?[2368]\d{7,8}$"), 251("251"), 212("212"), 258("258"), 256("256");
+  
+  private String regex;
+  
+  CountryCodeRegex(String regex) {
+    this.regex = regex;
+  }
+}

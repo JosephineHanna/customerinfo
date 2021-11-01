@@ -1,0 +1,16 @@
+package com.jumia.entities;
+
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "customer")
+public class Customer {
+
+  private int id;
+
+  private String phone;
+
+  private String name;
+
+}

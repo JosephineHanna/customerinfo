@@ -1,0 +1,19 @@
+package com.jumia.services.impl;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.jumia.entities.Customer;
+import com.jumia.services.CustomerService;
+
+@Service
+public class CustomerServiceImpl implements CustomerService {
+
+  @Override
+  public List<Customer> findAll() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+}

@@ -1,0 +1,4 @@
+com\jumia\services\CustomerServiceTest.class
+com\jumia\daos\CustomerDaoTest.class
+com\jumia\controllers\CustomerControllerTest.class
+com\jumia\controllers\CustomerControllerTest$1.class

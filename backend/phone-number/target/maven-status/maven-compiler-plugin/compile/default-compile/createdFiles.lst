@@ -1,0 +1,13 @@
+com\jumia\config\DBConfig.class
+com\jumia\enums\CountryCode.class
+com\jumia\entities\Customer.class
+com\jumia\utils\AppUtils.class
+com\jumia\config\PersistenceConfiguration.class
+com\jumia\enums\CountryCodeRegex.class
+com\jumia\daos\CustomerDao.class
+com\jumia\services\impl\CustomerServiceImpl.class
+com\jumia\entities\Customer_.class
+com\jumia\MainApplication.class
+com\jumia\dialect\SQLDialect.class
+com\jumia\controllers\CustomerController.class
+com\jumia\services\CustomerService.class

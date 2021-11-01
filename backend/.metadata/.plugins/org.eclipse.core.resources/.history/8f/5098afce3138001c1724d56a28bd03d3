@@ -1,0 +1,13 @@
+package com.jumia.controllers;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class PhoneNumberController {
+  
+  @RequestMapping("/")
+  public String hello() {
+      return "Hello World!";
+  }
+
+}

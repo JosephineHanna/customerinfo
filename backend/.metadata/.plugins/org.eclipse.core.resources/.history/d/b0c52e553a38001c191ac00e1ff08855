@@ -1,0 +1,5 @@
+package com.jumia.entities;
+
+public class Customer {
+
+}

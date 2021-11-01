@@ -1,0 +1,11 @@
+hibernate.dialect=com.baeldung.dialect.SQLiteDialect
+hibernate.hbm2ddl.auto=create-drop
+hibernate.show_sql=true
+
+spring.datasource.url=jdbc:sqlite:sample
+spring.datasource.driver-class-name=org.sqlite.JDBC
+
+spring.datasource.username=root
+spring.datasource.password=root
+
+spring.jpa.show-sql=true

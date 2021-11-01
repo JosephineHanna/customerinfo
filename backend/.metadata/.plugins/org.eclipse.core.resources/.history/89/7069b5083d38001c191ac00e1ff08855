@@ -1,0 +1,16 @@
+package com.jumia.daos.impl;
+
+import java.util.List;
+
+import com.jumia.daos.CustomerDao;
+import com.jumia.entities.Customer;
+
+public class CustomerDaoImpl implements CustomerDao{
+
+  @Override
+  public List<Customer> findAll() {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+}

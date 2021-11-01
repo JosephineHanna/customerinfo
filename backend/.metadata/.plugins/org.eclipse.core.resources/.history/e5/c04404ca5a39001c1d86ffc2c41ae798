@@ -1,0 +1,5 @@
+package com.jumia.enums;
+
+public enum CountryCodeRegex {
+
+}

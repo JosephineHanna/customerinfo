@@ -1,0 +1,28 @@
+package com.jumia.services.impl;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jumia.daos.CustomerDao;
+import com.jumia.entities.Customer;
+import com.jumia.services.CustomerService;
+
+@Service
+public class CustomerServiceImpl implements CustomerService {
+
+  @Autowired
+  private CustomerDao customerDao;
+
+  @Override
+  public List<Customer> findAll() {
+    List<Customer> customerList = customerDao.findAll();
+    for(Customer customer:customerList) {
+      String phone = customer.getPhone();
+      String code = code.substring(code.indexOf("(")+1, code.indexOf(")"));
+    }
+    return customerDao.findAll();
+  }
+
+}

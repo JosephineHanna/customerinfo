@@ -1,0 +1,22 @@
+package com.jumia.config;
+
+import org.springframework.context.annotation.Configuration;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+
+@Configuration
+@EnableJpaRepositories(basePackages = "com.jumia.daos")
+public class DBConfig {
+
+  @Autowired
+  private Environment env;
+
+  @Bean
+  public DataSource dataSource() {
+      final DriverManagerDataSource dataSource = new DriverManagerDataSource();
+      dataSource.setDriverClassName(env.getProperty("driverClassName"));
+      dataSource.setUrl(env.getProperty("url"));
+      dataSource.setUsername(env.getProperty("user"));
+      dataSource.setPassword(env.getProperty("password"));
+      return dataSource;
+  }
+}

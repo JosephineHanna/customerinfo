@@ -1,0 +1,17 @@
+package com.jumia.enums;
+
+public enum CountryCode {
+  CAMEROON("Stellungnahme Datei"), Ethiopia("Ergänzende Datei"),Morocco(""),Mozambique(""),Uganda("");
+
+  private String name;
+
+  CountryCode(String name) {
+    this.name = name;
+  }
+
+  @Override
+  public String toString() {
+    return name;
+  }
+
+}

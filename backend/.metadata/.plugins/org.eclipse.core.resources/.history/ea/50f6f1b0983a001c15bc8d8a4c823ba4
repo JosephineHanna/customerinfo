@@ -1,0 +1,64 @@
+package com.jumia.services;
+
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.mockito.Mockito.when;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.junit.Before;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.MockitoAnnotations;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import com.jumia.daos.CustomerDao;
+import com.jumia.entities.Customer;
+import com.jumia.enums.CountryCode;
+import com.jumia.services.impl.CustomerServiceImpl;
+
+@ExtendWith(MockitoExtension.class)
+public class CustomerServiceTest {
+
+  @InjectMocks
+  private CustomerServiceImpl customerService;
+
+  @Mock
+  private CustomerDao customerDao;
+
+  @Before
+  public void setUp() {
+    MockitoAnnotations.openMocks(this);
+
+  }
+
+  @Test
+  public void testFindAll() {
+
+    // prepare
+    Customer customer1 = new Customer("(212) 698054317", "Yosaf Karrouch");
+    Customer customer2 = new Customer("(258) 8237476181", "Chou");
+    List<Customer> customers = Arrays.asList(customer1, customer2);
+
+    // when
+    when(customerDao.findAll()).thenReturn(customers);
+
+    // Assertions
+    List<Customer> returnedCustomers = customerService.findAll();
+
+    Customer returnedCustomer1 = returnedCustomers.get(0);
+
+    assertThat(returnedCustomer1.getCountry()).isEqualTo(CountryCode.MOROCCO.name().toLowerCase());
+    assertEquals(returnedCustomer1.getState(), "Valid");
+
+    Customer returnedCustomer2 = returnedCustomers.get(1);
+    assertThat(returnedCustomer2.getCountry()).isEqualTo(CountryCode.MOZAMBIQUE.name().toLowerCase());
+    assertFalse(returnedCustomer2.isValid());
+
+  }
+
+}

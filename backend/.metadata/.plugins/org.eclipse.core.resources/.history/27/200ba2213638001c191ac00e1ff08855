@@ -1,0 +1,5 @@
+package com.jumia.datasource;
+
+public class SQLDialect extends Dialect{
+
+}

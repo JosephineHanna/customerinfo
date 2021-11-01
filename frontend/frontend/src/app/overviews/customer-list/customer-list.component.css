@@ -1,0 +1,51 @@
+.mat-column-name,
+.mat-column-phone,
+.mat-column-country,
+.mat-column-state {
+  word-wrap: break-word;
+  width: auto;
+  min-width: 150px;
+}
+
+.table-container {
+  margin-left: 20%;
+  margin-right: 25%;
+  margin-top: 2%;
+  height: 550px;
+  max-width: 100%;
+  overflow: auto;
+}
+
+.mat-row,
+.mat-header-row {
+  height: 40px !important;
+}
+
+.mat-row:nth-child(even) {
+  background-color: var(--primary-light-filling-color);
+}
+
+.mat-cell,
+.mat-header-cell {
+  border-right: 1.2px solid var(--borders-color);
+  padding: 6px 5px 6px 5px;
+}
+
+.mat-cell {
+  color: var(--main-text-color);
+}
+.mat-header-cell {
+  text-align: center;
+}
+.mat-header-cell,
+mat-form-field {
+  color: var(--main-text-color);
+  font-size: 20px;
+  background-color: var(--secondary-dark-filling-color);
+}
+
+.mat-header-cell:first-of-type,
+.mat-cell:first-of-type {
+  padding-left: 5px;
+  border-left: 1.2px solid var(--borders-color);
+}

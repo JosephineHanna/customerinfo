@@ -1,0 +1,20 @@
+package com.jumia.enums;
+
+import lombok.Getter;
+
+@Getter
+public enum CountryCode {
+  CAMEROON("237"), ETHIOPIA("251"), MOROCCO("212"), MOZAMBIQUE("258"), UGANDA("256");
+
+  private String code;
+
+  CountryCode(String code) {
+    this.code = code;
+  }
+
+  @Override
+  public String toString() {
+    return code;
+  }
+
+}

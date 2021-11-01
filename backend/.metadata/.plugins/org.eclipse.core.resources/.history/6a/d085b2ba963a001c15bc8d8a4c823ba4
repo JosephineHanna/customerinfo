@@ -1,0 +1,10 @@
+spring.jpa.database-platform=com.jumia.dialect.SQLDialect
+spring.jpa.hibernate.ddl-auto=update
+
+spring.datasource.url=jdbc:sqlite:sample.db
+spring.datasource.driver-class-name=org.sqlite.JDBC
+
+spring.datasource.username=root
+spring.datasource.password=root
+server.servlet.contextPath=/customer/
+spring.jpa.show-sql=true

@@ -1,0 +1,7 @@
+package com.jumia.config;
+
+@Configuration
+@EnableJpaRepositories(basePackages = "com.baeldung.books.repositories")
+public class DBConfig {
+
+}

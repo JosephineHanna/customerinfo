@@ -1,0 +1,6 @@
+package com.jumia.config;
+@Configuration
+@EnableJpaRepositories
+public class PersistenceConfiguration {
+
+}

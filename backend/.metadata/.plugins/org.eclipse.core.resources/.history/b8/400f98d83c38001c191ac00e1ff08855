@@ -1,0 +1,8 @@
+package com.jumia.daos;
+
+@
+public class CustomerDao {
+  
+  List<Customer> findAll();
+
+}
