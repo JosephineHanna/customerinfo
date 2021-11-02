@@ -31,7 +31,7 @@ public class CustomerControllerTest {
   private MockMvc mockMvc;
 
   @MockBean
-  CustomerService customerService;
+  private CustomerService customerService;
 
   @Test
   public void testFindAll() throws Exception {
