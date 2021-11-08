@@ -19,11 +19,13 @@ To run the application:
 Open terminal inside backend folder and run command java -jar target/customerInfo.jar
 
 To run the docker file:
-Open terminal inside backend folder and run those commands 
+Open terminal inside phone-number folder and run those commands 
 
 docker build --tag=customerinfo:latest .
 
 docker run -p8887:8888 customerinfo:latest
+
+Now you can access the app through url http://localhost:8080/
 
 ## Help
 Please send any questions on email jtakla10@gmail.com if would like to create a support ticket.
